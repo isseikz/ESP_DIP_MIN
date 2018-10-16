@@ -20,38 +20,16 @@ U 1 1 5BC5AB80
 P 5250 1400
 F 0 "POWER1" H 5356 1578 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 5356 1487 50  0000 C CNN
-F 2 "" H 5250 1400 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5250 1400 50  0001 C CNN
 F 3 "~" H 5250 1400 50  0001 C CNN
 	1    5250 1400
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x02_Male I2C1
-U 1 1 5BC5ABBD
-P 5250 2000
-F 0 "I2C1" H 5356 2178 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 5356 2087 50  0000 C CNN
-F 2 "" H 5250 2000 50  0001 C CNN
-F 3 "~" H 5250 2000 50  0001 C CNN
-	1    5250 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Male IO_LED1
-U 1 1 5BC5ACE8
-P 5250 3100
-F 0 "IO_LED1" H 5356 3278 50  0000 C CNN
-F 1 "Conn_01x01_Male" H 5356 3187 50  0000 C CNN
-F 2 "" H 5250 3100 50  0001 C CNN
-F 3 "~" H 5250 3100 50  0001 C CNN
-	1    5250 3100
-	1    0    0    -1  
-$EndComp
-Text GLabel 5750 2000 2    50   Input ~ 0
+Text GLabel 5800 2700 2    50   Input ~ 0
 SCL
-Text GLabel 5750 2100 2    50   Input ~ 0
+Text GLabel 5800 2800 2    50   Input ~ 0
 SDA
-Text GLabel 5750 3100 2    50   Input ~ 0
+Text GLabel 5800 2100 2    50   Input ~ 0
 IO_LED
 Text GLabel 5750 1400 2    50   Input ~ 0
 VCC
@@ -91,11 +69,11 @@ GND
 Wire Wire Line
 	4100 3050 4400 3050
 Wire Wire Line
-	5450 2000 5750 2000
+	5500 2100 5800 2100
 Wire Wire Line
-	5750 2100 5450 2100
+	5800 2200 5500 2200
 Wire Wire Line
-	5450 3100 5750 3100
+	5500 2800 5800 2800
 $Comp
 L power:GND #PWR01
 U 1 1 5BC5B2D2
@@ -123,37 +101,24 @@ Wire Wire Line
 	5550 1400 5750 1400
 Wire Wire Line
 	4100 2750 4400 2750
-Text GLabel 5750 2400 2    50   Input ~ 0
+Text GLabel 5800 2400 2    50   Input ~ 0
 D3
-Text GLabel 5750 2500 2    50   Input ~ 0
+Text GLabel 5800 2500 2    50   Input ~ 0
 CMD
-Text GLabel 5750 2600 2    50   Input ~ 0
-CLK
-Text GLabel 5750 2700 2    50   Input ~ 0
+Text GLabel 5800 2300 2    50   Input ~ 0
+SCK
+Text GLabel 5800 2600 2    50   Input ~ 0
 D0
 Wire Wire Line
-	5450 2400 5750 2400
+	5500 2300 5800 2300
 Wire Wire Line
-	5450 2500 5750 2500
+	5500 2400 5800 2400
 Wire Wire Line
-	5450 2600 5750 2600
+	5500 2500 5800 2500
 Wire Wire Line
-	5450 2700 5750 2700
-Text GLabel 5750 2800 2    50   Input ~ 0
+	5500 2600 5800 2600
+Text GLabel 5800 2200 2    50   Input ~ 0
 CD
-$Comp
-L Connector:Conn_01x05_Male SPI1
-U 1 1 5BC5D8EE
-P 5250 2600
-F 0 "SPI1" H 5356 2978 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 5356 2887 50  0000 C CNN
-F 2 "" H 5250 2600 50  0001 C CNN
-F 3 "~" H 5250 2600 50  0001 C CNN
-	1    5250 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5450 2800 5750 2800
 Text GLabel 4400 1850 2    50   Input ~ 0
 TXD
 Text GLabel 4400 1950 2    50   Input ~ 0
@@ -168,7 +133,7 @@ U 1 1 5BC5E603
 P 5250 3400
 F 0 "UART1" H 5356 3578 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 5356 3487 50  0000 C CNN
-F 2 "" H 5250 3400 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5250 3400 50  0001 C CNN
 F 3 "~" H 5250 3400 50  0001 C CNN
 	1    5250 3400
 	1    0    0    -1  
@@ -226,7 +191,7 @@ D3
 Text GLabel 6450 2500 0    50   Input ~ 0
 CMD
 Text GLabel 6450 2600 0    50   Input ~ 0
-CLK
+SCK
 Text GLabel 6450 2700 0    50   Input ~ 0
 D0
 Wire Wire Line
@@ -275,12 +240,12 @@ F 3 "~" H 5750 1200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Conn_01x02_Male UART2
+L Connector:Conn_01x02_Male SWITCH1
 U 1 1 5BCB6DBB
 P 5250 3800
-F 0 "UART2" H 5356 3978 50  0000 C CNN
+F 0 "SWITCH1" H 5356 3978 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 5356 3887 50  0000 C CNN
-F 2 "" H 5250 3800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5250 3800 50  0001 C CNN
 F 3 "~" H 5250 3800 50  0001 C CNN
 	1    5250 3800
 	1    0    0    -1  
@@ -293,4 +258,61 @@ Wire Wire Line
 	5450 3800 5750 3800
 Wire Wire Line
 	5750 3900 5450 3900
+Wire Wire Line
+	5500 2700 5800 2700
+$Comp
+L Connector:Conn_01x08_Male COMM1
+U 1 1 5BC66FA9
+P 5300 2400
+F 0 "COMM1" H 5406 2878 50  0000 C CNN
+F 1 "Conn_01x08_Male" H 5406 2787 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 5300 2400 50  0001 C CNN
+F 3 "~" H 5300 2400 50  0001 C CNN
+	1    5300 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J1
+U 1 1 5BC6C17B
+P 2000 4300
+F 0 "J1" H 2106 4478 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2106 4387 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2000 4300 50  0001 C CNN
+F 3 "~" H 2000 4300 50  0001 C CNN
+	1    2000 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J2
+U 1 1 5BC6C1B7
+P 2000 4500
+F 0 "J2" H 2106 4678 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2106 4587 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2000 4500 50  0001 C CNN
+F 3 "~" H 2000 4500 50  0001 C CNN
+	1    2000 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J3
+U 1 1 5BC6C1DD
+P 2000 4700
+F 0 "J3" H 2106 4878 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2106 4787 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2000 4700 50  0001 C CNN
+F 3 "~" H 2000 4700 50  0001 C CNN
+	1    2000 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J4
+U 1 1 5BC6C205
+P 2000 4900
+F 0 "J4" H 2106 5078 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2106 4987 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2000 4900 50  0001 C CNN
+F 3 "~" H 2000 4900 50  0001 C CNN
+	1    2000 4900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1,0 +1,75 @@
+Cmp-Mod V01 Created by PcbNew   date = Tue 16 Oct 2018 21:54:49 JST
+
+BeginCmp
+TimeStamp = 5BDEAB46
+Path = /5BC66FA9
+Reference = COMM1;
+ValeurCmp = Conn_01x08_Male;
+IdModule  = Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD246CE
+Path = /5BC5AB80
+Reference = POWER1;
+ValeurCmp = Conn_01x02_Male;
+IdModule  = Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD246FD
+Path = /5BCB6DBB
+Reference = SWITCH1;
+ValeurCmp = Conn_01x02_Male;
+IdModule  = Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD24730
+Path = /5BC5AE2D
+Reference = U1;
+ValeurCmp = ESP32-WROOM;
+IdModule  = ESP32-footprints-Lib:ESP32-WROOM;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD24746
+Path = /5BC5E603
+Reference = UART1;
+ValeurCmp = Conn_01x02_Male;
+IdModule  = Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BDEAF73
+Path = /5BC6C17B
+Reference = J1;
+ValeurCmp = Conn_01x01_Male;
+IdModule  = MountingHole:MountingHole_3.2mm_M3;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BDEAF7A
+Path = /5BC6C1B7
+Reference = J2;
+ValeurCmp = Conn_01x01_Male;
+IdModule  = MountingHole:MountingHole_3.2mm_M3;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BDEAF81
+Path = /5BC6C1DD
+Reference = J3;
+ValeurCmp = Conn_01x01_Male;
+IdModule  = MountingHole:MountingHole_3.2mm_M3;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BDEAF88
+Path = /5BC6C205
+Reference = J4;
+ValeurCmp = Conn_01x01_Male;
+IdModule  = MountingHole:MountingHole_3.2mm_M3;
+EndCmp
+
+EndListe
