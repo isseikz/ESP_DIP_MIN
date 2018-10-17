@@ -101,14 +101,6 @@ Wire Wire Line
 	5550 1400 5750 1400
 Wire Wire Line
 	4100 2750 4400 2750
-Text GLabel 5800 2400 2    50   Input ~ 0
-D3
-Text GLabel 5800 2500 2    50   Input ~ 0
-CMD
-Text GLabel 5800 2300 2    50   Input ~ 0
-SCK
-Text GLabel 5800 2600 2    50   Input ~ 0
-D0
 Wire Wire Line
 	5500 2300 5800 2300
 Wire Wire Line
@@ -161,10 +153,10 @@ Wire Wire Line
 Text GLabel 4400 2250 2    50   Input ~ 0
 MISO
 Text GLabel 4400 2350 2    50   Input ~ 0
-CLK
+SCK
 Text GLabel 4400 2450 2    50   Input ~ 0
 CS
-Text GLabel 4400 2550 2    50   Input ~ 0
+Text GLabel 4400 1650 2    50   Input ~ 0
 MOSI
 Wire Wire Line
 	4100 2250 4400 2250
@@ -172,41 +164,14 @@ Wire Wire Line
 	4100 2350 4400 2350
 Wire Wire Line
 	4100 2450 4400 2450
-Wire Wire Line
-	4100 2550 4400 2550
 Text GLabel 4400 2650 2    50   Input ~ 0
 CD
 Wire Wire Line
 	4100 2650 4400 2650
-Text GLabel 6950 2400 2    50   Input ~ 0
-CS
-Text GLabel 6950 2500 2    50   Input ~ 0
-CLK
-Text GLabel 6950 2600 2    50   Input ~ 0
-MOSI
-Text GLabel 6950 2700 2    50   Input ~ 0
-MISO
-Text GLabel 6450 2400 0    50   Input ~ 0
-D3
-Text GLabel 6450 2500 0    50   Input ~ 0
-CMD
-Text GLabel 6450 2600 0    50   Input ~ 0
-SCK
-Text GLabel 6450 2700 0    50   Input ~ 0
-D0
-Wire Wire Line
-	6450 2400 6950 2400
-Wire Wire Line
-	6950 2500 6450 2500
-Wire Wire Line
-	6450 2600 6950 2600
-Wire Wire Line
-	6950 2700 6450 2700
 Text GLabel 4400 2850 2    50   Input ~ 0
 BOOT
 Wire Wire Line
 	4100 2850 4400 2850
-NoConn ~ 4100 1650
 NoConn ~ 4100 2950
 NoConn ~ 2250 3000
 NoConn ~ 2250 2900
@@ -227,7 +192,6 @@ NoConn ~ 3250 3450
 NoConn ~ 3350 3450
 NoConn ~ 3450 3450
 NoConn ~ 3550 3450
-NoConn ~ 3650 3450
 $Comp
 L power:PWR_FLAG #FLG01
 U 1 1 5BC9AEE1
@@ -315,4 +279,60 @@ F 3 "~" H 2000 4900 50  0001 C CNN
 	1    2000 4900
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R R1
+U 1 1 5BC82C7C
+P 3650 3600
+F 0 "R1" H 3720 3646 50  0000 L CNN
+F 1 "5.1k" H 3720 3555 50  0000 L CNN
+F 2 "" V 3580 3600 50  0001 C CNN
+F 3 "~" H 3650 3600 50  0001 C CNN
+	1    3650 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5BC82D6F
+P 3650 3900
+F 0 "#PWR0101" H 3650 3650 50  0001 C CNN
+F 1 "GND" H 3655 3727 50  0000 C CNN
+F 2 "" H 3650 3900 50  0001 C CNN
+F 3 "" H 3650 3900 50  0001 C CNN
+	1    3650 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3750 3650 3900
+NoConn ~ 4400 2550
+Wire Wire Line
+	4100 2550 4400 2550
+Text GLabel 5800 2600 2    50   Input ~ 0
+CS
+Text GLabel 5800 2500 2    50   Input ~ 0
+SCK
+Wire Wire Line
+	4100 1650 4400 1650
+Text GLabel 5800 2400 2    50   Input ~ 0
+MISO
+Text GLabel 5800 2300 2    50   Input ~ 0
+MOSI
+Text GLabel 7100 2450 2    50   Input ~ 0
+MISO
+Text GLabel 6500 2450 0    50   Input ~ 0
+VCC
+$Comp
+L Device:R R?
+U 1 1 5BC8E4FB
+P 6800 2450
+F 0 "R?" V 6593 2450 50  0000 C CNN
+F 1 "10k" V 6684 2450 50  0000 C CNN
+F 2 "" V 6730 2450 50  0001 C CNN
+F 3 "~" H 6800 2450 50  0001 C CNN
+	1    6800 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 2450 6650 2450
+Wire Wire Line
+	6950 2450 7100 2450
 $EndSCHEMATC
